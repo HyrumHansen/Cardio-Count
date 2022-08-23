@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Heart Bot</title>
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/icon.png')}}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Heart Bot</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Exploratory Data Analysis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ml">Machine Learning</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#bio">Meet Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Cardio Count</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5"> A short, free way to find out if you are at risk for heart disease.</h2>
+                        <a class="btn btn-primary" href="#about">Overview</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <!--PLOT 1 -->
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">About Our Project</h2>
+                        <p class="text-white-50">
+                           Over the course of 3 weeks we learned python and machine learning from scratch to produce an analysis of the symptoms that can determine whether a patient has heart disease.
+                        </p>
+                      
+                        <p class="text-white-50">
+                           The two datasets that we used to create the project are a heart disease dataset and a heart failure dataset.
+                      </p>
+                      
+                      <p class="text-white-50">
+                         The main question we were trying to answer while creating this project was, "What symptoms best determine whether a patient has heart disease?"
+                        
+                      </p>
+                      
+                      <p class="text-white-50">
+                        This project will benefit people who are at risk for heart failure and doctors who want to give high-risk patients prevention plans before any treatment is necessary.
+                      </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="{{url_for('static', filename='images/heartdiseasew.jpeg')}}" alt="..." />
+            </div>
+        </section>
+
+
+        <!--THIS SECTION IS FOR EXPLORATORY DATA ANALYSIS -->
+        <!--HEART DISEASE DATASET -->
+
+        <section class="projects-section bg-light" id="projects">
+          <h1 style="margin:auto; text-align: center; margin-bottom: 5rem; font-weight: bold; font-size: 4em">
+      Exploratory Data Analysis
+      </h1>
+            <div class="container px-4 px-lg-5">
+              <h2>
+                Heart Disease Dataset
+              </h2>
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{url_for('static', filename='images/age_vs_rest_bp.png')}}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+
+                            <h4>Age vs. RestingBP</h4>
+                            <p class="text-black-50 mb-0">This scatterplot visualizes the relationship between age and resting blood pressure.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/MaxHR vs RestingBP Scatterplot.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">MaxHR vs. RestingBP</h4>
+                                    <p class="mb-0 text-white-50">This scatterplot shows the relationship between maximum heart rate and resting blood pressure.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/heart_disease_vs_chest_pain_type.png')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Heart Disease vs. Chest Pain Type</h4>
+                                    <p class="mb-0 text-white-50">This bar graph represents the different types of chest pain that occurred in people who had heart disease.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--THIS SECTION IS FOR EXPLORATORY DATA ANALYSIS -->
+        <!--HEART FAILURE DATASET -->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+              <h2>
+                Heart Failure Dataset
+              </h2>
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center"> 
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{url_for('static', filename='images/chart_2.png')}}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+
+                            <h4>data</h4>
+                            <p class="text-black-50 mb-0">This chart represents the first five rows of our dataset. As we changed all the "Yes/No" data into "1/0", on the one hand, this dataset shows us that people can still have heart failure no matter they are diagnosed with health issues, like diabetes and high blood pressure, or not. On the other hand, the data might also help doctors and the public by listing out the major factors that can lead to heart failure.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/data_scatter_2.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Age vs Creatinine Phosphokinase</h4>
+                                    <p class="mb-0 text-white-50">This graph represents the relationship between the average levels of creatinine phosphokinase within different age groups and also how that compares to the death events of the pateints. Creatinine phosphopkinase is an enzyme that regulates ATP and abnormal levels are associated with muscle failure. This graph how different levels of creatinine phosphokinase may be related to death due to heart failure and how that may change due to age.   </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/age_platelets.png')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Age Vs. Platelets</h4>
+                                    <p class="mb-0 text-white-50">This is another graph that shows the relationship between platelet counts within different age groups and death events due to heart failure. The data allows us to see if platelet amounts affect death by heart failure and also how those levels change over age.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+       <!--THIS SECTION IS FOR THE SVM MODEL -->
+        <!--SVM -->
+        <section class="projects-section bg-light" id="ml">
+          <h1 style="margin:auto; text-align: center; margin-bottom: 5rem; font-weight: bold; font-size: 4em">
+      Machine Learning
+      </h1>
+            <div class="container px-4 px-lg-5">
+              <h2>
+                Support Vector Machine
+              </h2>
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7 align-items-center"><img class="img-fluid mb-3 mb-lg-0" src="{{url_for('static', filename='images/support_vector_machine.png')}}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+
+                            <h4>About the Algorithm</h4>
+                            <p class="text-black-50 mb-0">A Support Vector Machine, or SVM, is a model used to solve classification and regression problems. The model attempts to separate data into classes by drawing a "separating hyperplane." Achieving perfect separability is rarely possible, so the restrictions on separation are loosened to achieve a "good enough" model.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/decision_tree.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Heart Disease Confusion Matrix</h4>
+                                    <p class="mb-0 text-white-50">Accuracy: 78.6%</p>
+                                    <p class="mb-0 text-white-50">The confusion matrix organizes data by true positive/negative responses and false positive/negative responses. According to this data set, there are 15 false negative indicators of heart failure and 17 false positive indicators. This means that this data is fairly accurate, because the goal is to have the least amount of false positive/negative responses as possible.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/svm_model.png')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Heart Failure Confusion Matrix</h4>
+                                    <p class="mb-0 text-white-50">Accuracy: 83.3%</p>
+                                    <p class="mb-0 text-white-50">By inputting information from the heart failure data set, the confusion matrix states that there are four false positive responses to heart failure and six false negative responses. In conclusion, this is data is appropriate for our project, because the amount of false indicators is minimal.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!--THIS SECTION IS FOR THE KNN MODEL -->
+        <!--KNN -->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+              <h2>
+                K Nearest Neighbors
+              </h2>
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{url_for('static', filename='images/training_vs_testing_code.png')}}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+
+                            <h4>Behind the Program</h4>
+                            <p class="text-black-50 mb-0">K Nearest Neighbors, otherwise known as KNN, is a model that makes classifications for each point based on their proximity to other points of specified classes. By analyzing thirty values in the hyperparameter list, we built an optimized model to predict heart disease.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/training_error_testing_error.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">KNN Model Grid Search</h4>
+                                    <p class="mb-0 text-white-50">According to the KNN Model Grid Search, index 12 has the least amount of testing errors compared to the other values. This argument will be the most useful for the project, since we want to use the value that is most accurate. </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/knn_heatmap.png')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">12-NN Model Assessment</h4>
+                                    <p class="mb-0 text-white-50">Accuracy: 65%</p>
+                                    <p class="mb-0 text-white-50">According to this KNN model, there are 39 true positives and zero true negatives. Since we weren't able to detect any accurate negative indicators of heart disease, we conclude that this model would be a poor fit for our data.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+      <!--THIS SECTION IS FOR THE DECISION TREE MODELS -->
+        <!--Decision Trees -->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+              <h2>
+               Decision Trees
+              </h2>
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{url_for('static', filename='images/decision_trees_3.png')}}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+
+                            <h4>Behind the Program</h4>
+                            <p class="text-black-50 mb-0">
+        Decision tree models helps categorizes or make predictions on the information collected based on how previous sets of questions were answered. By analyzing .</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/tree_disease_heatmap.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">KNN Model Grid Search</h4>
+                                    <p class="mb-0 text-white-50">According to the KNN Model Grid Search, index 12 has the least amount of testing errors compared to the other values. This argument will be the most useful for the project, since we want to use the value that is most accurate. </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/decision_tree_heatmap.png')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">12-</h4>
+                                    <p class="mb-0 text-white-50">According to this KNN model, there are 39 true positives and zero true negatives. Since we weren't able to detect any accurate negative indicators of heart disease, we conclude that this model would be a poor fit for our data. </p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      
+      
+      <!--THIS SECTION IS FOR RANDOM FORESTS -->
+        <!--RF -->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+              <h2>
+                Random Forests
+              </h2>
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{url_for('static', filename='images/rf.svg')}}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+
+                            <h4>Behind the Program</h4>
+                            <p class="text-black-50 mb-0">The random forest algorithm trains a sequence of naive classifiers and makes a classification based on a majority vote. This model used an ensemble of 200 shallow trees.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/forest_heatmap.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Heart Failure Confusion Matrix</h4>
+                                    <p class="mb-0 text-white-50">Accuracy:85%. Our model shows that there are a total of 60 data points with 37 true positives, 4 false positives, 7 false negatives, and 14 true negatives. This shows us that some of our data points were not classified accurately however, 85% of the data was accurate.  </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/forest_disease_heatmap.png')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Heart Disease Confusion Matrix</h4>
+                                  <p class="mb-0 text-white-50">Accuracy: 90%
+                                    According to this model, there are a total of 150 data points in which 61 points were true positive and 74 were true negative. However there were 8 false positives and 7 false negatives which decrease the accuracy of the model. However overall, the model has a 90% accuracy. </p>
+                                    <p class="mb-0 text-white-50"></p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- Heart failure variable importance-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/heart_disease_rf_var_imp.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Heart Disease Variable Importance</h4>
+                                    <p class="mb-0 text-white-50">The most important variables in this data set were maximum heart rate achieved, exercise angina (the pain that occurs when not enough blood flow is getting to the heart), oldpeak (ST depression induced by exercise relative to rest), and the slope of the ST segment (the, typically flat, section on an ECG reading).</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/heart_failure_rf_var_imp.png')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Heart Failure Variable Importance</h4>
+                                    <p class="mb-0 text-white-50">The variables that held the most importance in this data set were ejection fraction (the percentage of blood leaving the heart at each contraction), the level of serum creatinine in the blood, and the amount of time between the follow up appointment.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      <!--ABOUT US SECTION -->
+        <!--About Us -->
+        <section class="projects-section bg-light" id="bio">
+          <h1 style="margin:auto; text-align: center; margin-bottom: 5rem; font-weight: bold; font-size: 4em">
+      Meet Us
+      </h1>
+            <div class="container px-4 px-lg-5">
+              <h2>
+               About Our Team
+              </h2>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/training_error_testing_error.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Allison Esquivel</h4>
+                                    <p class="mb-0 text-white-50">Allison is currently a sophomore at the school ISB also known as the International School of Beaverton. She enjoys enjoys working with technology especially computer science. Aside from programming in her free time she loves to take naps and watch literally millions of k-dramas. </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/3ED7AD9B-B208-4848-B527-A6441964C419.jpeg')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Dylan Price</h4>
+                                    <p class="mb-0 text-white-50">Dylan is a sophomore at the Science and Math Institute in Tacoma, Washington. He is interested in biology and computer science. His hobbies include going on walks and runs, listening to music, and playing soccer and video games. </p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/Manna.jpg')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Manna Sam</h4>
+                                    <p class="mb-0 text-white-50">Manna is currently a rising senior at Staten Island Technical High School. She has a passion for science and technology and hopes to pursue a career in the Bio-engineering field. She enjoys painting, dance, writing, listening to music, and watching Netflix. She became a part of AI Summer Camp in 2022 and is excited to continue exploring the world of technology and medicine.  </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/morgan_lol.jpg')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Morgan Tung</h4>
+                                    <p class="mb-0 text-white-50">Morgan is a rising junior at William A. Shine Great Neck South High School, Long Island, New York. She is interested in science, especially chemistry and knowledge related to the medical field. In her free time, she loves cooking, canoeing and listening to music. </p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/stephanie-basquette.png')}}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Stephanie Basquette</h4>
+                                    <p class="mb-0 text-white-50">Stephanie is a junior at the Science and Math Institute in Tacoma, Washington. She is interested in physical sciences, such as chemistry and physics. In her spare time, she enjoys reading, writing, and listening to music.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{url_for('static', filename='images/Sydney.jpg')}}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Sydney Mercer</h4>
+                                    <p class="mb-0 text-white-50">Sydney is a freshman at Oregon State University in Corvallis, Oregon. She plans to study math and computer science. In her free time, she makes music and plays sports such as soccer and softball.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      <!--THIS SECTION IS FOR THE CONCLUSION -->
+        <!--Decision Trees -->
+        <section class="projects-section bg-light" id="conclusion">
+            <div class="container px-4 px-lg-5">
+              <h1 style="margin:auto; text-align: center; margin-bottom: 5rem; font-weight: bold; font-size: 4em">
+      Conclusion
+              </h1>
+               <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">This project was a great introduction to python, mechanical engineering and data science. As our team used the internet for research and coding for data-analysis, we did not only gain some experience with technology but also learned a bit more about heart diseases. By comparing different variables and diagrams we created, we were able to see some relationships between factors that could lead to health issues. Last but not least, we also started to pay more attention to the accuracy of the data we had. </h1>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+                      <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">AI-CAMP</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">The three-week summer program where campers learn engineering and data skills by working in teams and creating different projects.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Mentor of the Wireless Invaders</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Hyrum Hansen</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2022</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
